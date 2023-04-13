@@ -150,6 +150,7 @@ void Mediatheque::deleteID(int _ID) {
     for (int i = _ID; i<(listeMedia.size()+1);i++){
         listeMedia[i-1]->Media::changeID(i); //ID -1
     }
+    reloadMedia("..\\Base_donnees.txt");
 }
 
 void Mediatheque::bye() {
@@ -171,5 +172,8 @@ void Mediatheque::searchM(std::string chaine) {
 
 void Mediatheque::reloadMedia(std::string filename){
     save(filename);
+    while((listeMedia.size()!=0)){
+        listeMedia.erase(listeMedia.begin());
+    }
     loadMedia(filename);
 }
