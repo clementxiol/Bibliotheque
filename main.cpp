@@ -7,17 +7,24 @@
 using namespace std;
 int main()
 {
-    string filename = "C:\\Users\\Xiol\\CLionProjects\\new_biblio\\Coucou.txt";
+    string filename = "..\\Coucou.txt";
     Mediatheque MaBiblio;
     MaBiblio.loadMedia(filename); // un seul fichier contient toutes les données
     MaBiblio.listeMedia[0]->afficheMedia();
     MaBiblio.listeMedia[1]->afficheMedia();
-    MaBiblio.listeMedia[2]->afficheMedia();
+    //MaBiblio.listeMedia[2]->afficheMedia();
     //MaBiblio.searchM("Livre");
     //MaBiblio.rechercheMedia[0]->afficheMedia();
     //MaBiblio.rechercheMedia[1]->afficheMedia();
     //MaBiblio.rechercheMedia[2]->afficheMedia();
-    MaBiblio.save("C:\\Users\\Xiol\\CLionProjects\\new_biblio\\Louis.txt");
+    MaBiblio.addMedia();
+    MaBiblio.deleteID(2);
+    //MaBiblio.addMedia();
+    MaBiblio.reloadMedia("..\\Coucou.txt");
+    MaBiblio.show(1);
+    MaBiblio.show(2);
+    MaBiblio.show(3);
+    MaBiblio.bye();
     //MaBiblio.loadMedia("C:\\Users\\Xiol\\CLionProjects\\new_biblio\\Jeje.txt");
     //MaBiblio.listeMedia[3]->afficheMedia();
     //MaBiblio.listeMedia[4]->afficheMedia();

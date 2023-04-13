@@ -168,3 +168,8 @@ void Mediatheque::searchM(std::string chaine) {
         }
     }
 }
+
+void Mediatheque::reloadMedia(std::string filename){
+    save(filename);
+    loadMedia(filename);
+}

@@ -36,6 +36,7 @@ public :
     void reset();
     void bye();
     void addMedia();
+    void reloadMedia(string filename);
 };
 
 

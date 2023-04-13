@@ -6,16 +6,9 @@ biblio
 45
 hachette
 coucou la vie
-Livre
-DD
-AA
-21
-60
-hachettee
-la vie c'est bien
 CD
 Michael Jackson
-bad
-200
+Bad
+25
 11
 Epic Records
