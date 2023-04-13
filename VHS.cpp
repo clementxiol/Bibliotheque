@@ -33,7 +33,7 @@ void VHS::add2Media(int quantiteMedia) {
     cout<<"Quelle est ma duree?"<<endl;
     getline(cin,_duree);
     from_chars(_duree.c_str(),_duree.c_str() + _duree.length(), duree);
-    cout<<"Dans quelle maison de production ai-je ete produit?"<<endl;
+    cout<<"Dans quelle maison de production ai-je ete produit ?"<<endl;
     getline(cin,maisonProduction);
 }
 
